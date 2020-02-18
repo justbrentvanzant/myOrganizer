@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Conquer</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="main.css">
+	<link href="https://fonts.googleapis.com/css?family=Dosis|Josefin+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+	<p class="heading">Todo</p>
+	<p class="subHeading"><span id="today" class="focus" onclick="myFunctionTwo()">Today</span> || <span class="nonFocus" onclick="myFunction()" id="week">Week</span> </p>
+	<ul id="daily" class="viewable">
+		<li class="completed">Prep Breakfest and Lunch</li>
+		<li class="project">Continue Coding This Organizer</li>
+		<li class="vgdc">Post VGDC Ads past 12:00 PM</li>
+		<li class="vgdc">Send Arren form details</li>
+		<li class="school">Work on 135 with Vivian</li>
+		<li class="school">Work on 161 Setup Design</li>
+		<li class="leet">LeetCode <a href="https://leetcode.com/problems/single-number/">Problem 136</a></li>
+		<li class="leet">LeetCode <a href="https://leetcode.com/problems/merge-two-binary-trees/">Problem 617</a></li>
+		<li class="leet">LeetCode <a href="https://leetcode.com/problems/maximum-depth-of-binary-tree/">Problem 104</a></li>
+		<li>2 Mile Run</li>
+		<li>15 Mins Abs</li>
+		<li>Calculate House Budget</li>
+	</ul>
+	<ul id="weekly" class="hidden">
+		<li class="project">Finish Coding Organizer</li>
+		<li class="school">Finish 135 Project</li>
+		<li class="school">Finish 161</li>
+		<li class="school">Start 140L</li>
+		<li class="project">Figure out SirDabsAlotScraper</li>
+	</ul>
+	<footer>
+		Fresh leetcode linked to linkedin.
+	</footer>
+</body>
+<script>
+  function myFunction() {
+  	 var week= document.getElementById("week");
+  	 week.classList.remove("nonFocus");
+	 week.classList.add("focus");
+	 var today= document.getElementById("today");
+  	 today.classList.remove("focus");
+	 today.classList.add("nonFocus");
+	 var weekly = document.getElementById("weekly");
+	 weekly.classList.remove("hidden");
+	 weekly.classList.add("viewable");
+	 var daily = document.getElementById("daily");
+	 daily.classList.remove("viewable");
+	 daily.classList.add("hidden");
+  }
+  function myFunctionTwo() {
+  	 var week= document.getElementById("today");
+  	 week.classList.remove("nonFocus");
+	 week.classList.add("focus");
+	 var today= document.getElementById("week");
+  	 today.classList.remove("focus");
+	 today.classList.add("nonFocus");
+	 var weekly = document.getElementById("daily");
+	 weekly.classList.remove("hidden");
+	 weekly.classList.add("viewable");
+	 var daily = document.getElementById("weekly");
+	 daily.classList.remove("viewable");
+	 daily.classList.add("hidden");
+  }
+</script>
+</html>

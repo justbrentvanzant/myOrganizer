@@ -1,0 +1,100 @@
+body {
+		font-family: 'Josefin Sans', sans-serif;
+			font-weight:100;
+		margin:2vw;
+
+}
+html{ 
+	background: linear-gradient(#ECE9E6, #FFFFFF);
+		height:100vh; 
+	}
+.heading {
+	font-family: 'Josefin Sans', sans-serif;
+	text-align: center;
+	font-size:6vw;
+	padding:0px;
+	margin:0px;
+	margin-top:2vh;
+	line-height:6vw;
+}
+
+.subHeading {
+	font-family: 'Josefin Sans', sans-serif;
+	text-align: center;
+	font-size:3.2vw;
+	padding:0px;
+	margin:0px;
+	line-height:4.5vw;
+}
+.focus {
+	font-style: italic;
+}
+.nonFocus {
+	font-style: italic;
+	color: rgba(0,0,0,0.6);
+}
+.hidden {
+	display: none;
+}
+.viewable {
+	display: block;
+}
+#weekly {
+	text-align:right;
+}
+.nonFocus:hover {
+	font-style: bold;
+	color: rgba(0,0,0,1);
+}
+
+a {
+	text-decoration: underline;
+	text-decoration-color: 	inherit;
+	 color: inherit;
+}
+a:link {
+  color: inherit;
+}
+
+/* visited link */
+a:visited {
+  color: inherit;
+}
+
+/* mouse over link */
+a:hover {
+  color: inherit;
+}
+
+/* selected link */
+a:active {
+   color: inherit;
+}
+
+ul {
+	list-style-type: none;
+	font-weight:200;
+	font-size:2.1vw;
+	line-height:2.41vw;
+}
+
+.leet {
+	color:#6dd5ed;
+}
+.project {
+	color:#b91d73;
+}
+
+.school {
+	color:#ED213A;
+
+}
+
+footer {
+	margin-bottom :2vh;
+	text-align:center;
+}
+
+.completed {
+	 text-decoration: line-through;
+}
